@@ -1,0 +1,30 @@
+.pagination-wrap {
+	text-align: center;
+	padding-top: 28px;
+}
+.pagination-list {
+	display: inline-block;
+	font-size: 0;
+
+	li {
+		font-size: 14px;
+		display: inline-block;
+		font-family: $reg;
+		margin: 0 3px;
+
+		a {
+			display: block;
+			height: 30px; width: 30px;
+			line-height: 30px;
+			border: 1px solid transparent;
+			text-align: center;
+
+			&.active {
+				background-color: #efeee8;
+			}
+			&:hover {
+				border-color: #efeee8;
+			}
+		}
+	}
+}

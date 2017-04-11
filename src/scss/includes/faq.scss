@@ -1,0 +1,29 @@
+.question-figure {
+	height: 484px; width: 405px;
+	position: relative;
+}
+.faq-left {
+	margin: -35px 0 0 74px;
+}
+@media screen and (max-width:1439px) {
+
+	.faq-left {
+		margin-left: 0px;
+	}
+
+}
+@media screen and (max-width:1295px) {
+
+	.question-figure {
+		height: 432px; width: 360px;
+	}
+}
+@media screen and (max-width:1199px) {
+
+.question-figure {
+		display: none;
+	}
+	.faq-left {
+		padding: 25px 0 0;
+	}
+}

@@ -1,0 +1,100 @@
+.city-nav-icon {
+	width: 23px; height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+
+	&:hover,
+	&.active {
+
+		.golden-fill {
+			fill: $golden;
+			transition: .3s;
+		}
+	}
+}
+.icon-star {
+	height: 22px; width: 30px;
+	background-color: $blue;
+	text-align: center;
+	padding: 7px 0 1px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&.active {
+		background-color: $dark-blue;
+
+		.full-golden {
+			fill: $golden;
+			stroke: $golden;
+		}
+	}
+}
+.reason-icon {
+	display: inline-block;
+	height: 50px;
+}
+.icon-info {
+	border: 1px solid #fff;
+	height: 12px; width: 12px;
+	display: inline-block;
+	text-align: center;
+	line-height: 12px;
+	border-radius: 50%;
+	font-size: 11px;
+}
+.right-arrow {
+	
+	&:hover,
+	&.active {
+
+		.golden-fill {
+			fill: $golden;
+			transition: .3s;
+		}
+	}
+}
+.icon-back {
+	margin-right: 5px;
+}
+.icon-star-empty {
+	height: 42px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 46px;
+}
+.round-icon-outer {
+	height: 70px; width: 70px;
+	border: 1px solid $golden;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+}
+.action-icon {
+
+	&:hover,
+	&.active {
+
+		.golden-fill {
+			fill: $golden-dark;
+			transition: .3s;
+		}
+		.golden-stroke {
+			stroke: $golden-dark;
+			transition: .3s;
+		}
+	}
+}
+.category-icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	.white-fill {
+		transition: .3s;
+	}
+	.white-stroke {
+		transition: .3s;
+	}
+}

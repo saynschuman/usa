@@ -1,0 +1,118 @@
+.empty-golden-btn {
+	width: 206.5px;
+	max-width: 100%;
+	height: 40px;
+	line-height: 1;
+	border: solid 1px $golden;
+	font-family: $reg;
+	font-size: 14px;
+	background-color: transparent;
+	font-weight: normal;
+	color: $golden;
+	text-align: center;
+	display: inline-block;
+
+	&:hover {
+		background-color: $golden;
+		color: #fff;
+	}
+	&.white-inside {
+		color: #fff;
+	}
+}
+.golden-btn {
+	width: 206.5px;
+	height: 42px;
+	line-height: 1;
+	border: solid 1px $golden;
+	font-family: $reg;
+	font-size: 14px;
+	background-color: $golden;
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+
+	&:hover {
+		background-color: $golden-middle;
+		border-color: $golden-middle;
+		color: #fff;
+	}
+	&:focus,
+	&:active {
+		background-color: $golden-dark;
+		border-color: $golden-dark;
+		color: #fff;
+	}
+}
+a {
+
+	&.golden-btn {
+		height: 40px;
+		line-height: 40px;
+	}
+}
+.round-arrow-btn {
+	height: 42px; width: 42px;
+	display: inline-block;
+	background-image: url(../images/icons/btn-icon.png);
+	background-position: 0 0;
+	transition: 0s;
+
+	&:hover {
+		background-position: 0 -46px;
+	}
+}
+.bg-button {
+	border: solid 2px $golden;
+	width: 168px;
+	line-height: 1;
+}
+.add-compare-btn {
+	width: 195px;
+	height: 36px;
+	line-height: 31px;
+	border: solid 1px $golden;
+	font-family: $reg;
+	font-size: 14px;
+	background-color: $golden;
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+
+	&:hover {
+		background-color: $golden-middle;
+		border-color: $golden-middle;
+		color: #fff;
+	}
+
+	&.active {
+		color: transparent;
+		background-color: $golden;
+
+		.icon-star-empty {
+
+			.fill-white {
+				fill: #fff;
+			}
+		}
+		&:before {
+			color: #fff;
+		}
+		&:hover {
+			border-color: $golden;
+		}
+	}
+	&:before {
+		position: absolute;
+		content: attr(data-text);
+		color: transparent;
+		padding-left: 22px;
+	}
+	.icon-star-empty {
+		height: 36px;
+		line-height: 40px;
+	}
+}

@@ -1,0 +1,23 @@
+.search-items {
+	margin: -15px -15px 0;
+}
+.square-card-block {
+	padding: 10px 15px;
+
+	.card-block {
+		width: 100%;
+	}
+	.item-figure {
+		height: 390px; width: 100%;
+		position: relative;
+	}
+}
+
+@media screen and (max-width:640px) {
+
+
+	.search-items {
+		margin-right: -10px;
+		margin-left: -10px;
+	}
+}

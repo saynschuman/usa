@@ -1,0 +1,117 @@
+
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoSlabRegular"; */
+@font-face {
+    font-family: 'RobotoSlabRegular';
+    src: url('../fonts/RobotoSlabRegular/RobotoSlabRegular.eot');
+    src: url('../fonts/RobotoSlabRegular/RobotoSlabRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoSlabRegular/RobotoSlabRegular.woff2') format('woff2'),
+         url('../fonts/RobotoSlabRegular/RobotoSlabRegular.woff') format('woff'),
+         url('../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf') format('truetype'),
+         url('../fonts/RobotoSlabRegular/RobotoSlabRegular.svg#RobotoSlabRegular') format('svg');
+}
+/* font-family: "RobotoSlabBold"; */
+@font-face {
+    font-family: 'RobotoSlabBold';
+    src: url('../fonts/RobotoSlabBold/RobotoSlabBold.eot');
+    src: url('../fonts/RobotoSlabBold/RobotoSlabBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoSlabBold/RobotoSlabBold.woff2') format('woff2'),
+         url('../fonts/RobotoSlabBold/RobotoSlabBold.woff') format('woff'),
+         url('../fonts/RobotoSlabBold/RobotoSlabBold.ttf') format('truetype'),
+         url('../fonts/RobotoSlabBold/RobotoSlabBold.svg#RobotoSlabBold') format('svg');
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello/fontello.eot?81218681');
+  src: url('../fonts/fontello/fontello.eot?81218681#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff2?81218681') format('woff2'),
+       url('../fonts/fontello/fontello.woff?81218681') format('woff'),
+       url('../fonts/fontello/fontello.ttf?81218681') format('truetype'),
+       url('../fonts/fontello/fontello.svg?81218681#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?81218681#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  /*width: 1em;*/
+  /*margin-right: .2em;*/
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 17px;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /*margin-left: .2em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
+.icon-viber:before { content: url(../images/icons/index-copy.svg); line-height: 19px; transform: scale(1.1); padding-top: 6px;} /* '' */
+.icon-viber.white:before { content: url(../images/icons/viber-wtite.svg); line-height: 19px; transform: scale(1.1); padding-top: 6px;} /* '' */
+.icon-viber.black:before { content: url(../images/icons/viber-black.svg); line-height: 19px; transform: scale(1.1); padding-top: 6px;} /* '' */

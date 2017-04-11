@@ -1,0 +1,42 @@
+.breadcrumbs-wrap {
+	background-color: #f4f4f4;
+	border: solid 1px #e4e3e3;
+	padding: 9px 0;
+}
+.breadcrumbs-list {
+	font-size: 0;
+	margin-left: -5px;
+
+	li {
+		display: inline-block;
+		font-family: $reg;
+		font-size: 13px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.38;
+		letter-spacing: normal;
+		color: #333333;
+		margin-left: 5px;
+		position: relative;
+
+		&:after {
+			content: '\2044';
+		}
+		&:last-child {
+
+			&:after {
+				display: none;
+			}
+		}
+		a {
+			color: $golden-dark;
+			padding: 0 5px;
+			margin-left: -5px;
+
+			&:hover {
+				color: $golden;
+			}
+		}
+	}
+}
