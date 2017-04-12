@@ -7460,4 +7460,6 @@ h2 .tr {
     width: 100%;
     float: left; }
     .search-results ul li.results-text span {
-      text-align: left; } }
+      text-align: left; }
+  .search-results {
+    margin-bottom: 20px; } }
