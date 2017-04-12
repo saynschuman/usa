@@ -29,5 +29,19 @@ if ($(".top-slider_2").length) {
 // 	}
 // })
 
+// tabs on new-search
+$(".choose-header").on("click", "li", function(){
+
+	var tabs = $(".choose-header li"),
+	content = $(".table-wrap-wrap");
+
+	tabs.removeClass("active");
+	content.removeClass("active");
+
+	$(this).addClass("active");
+	content.eq($(this).index()).addClass("active");
+
+});
+
 })(jQuery);
 

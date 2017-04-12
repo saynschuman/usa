@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#190b46">
+	
+	<title>USA::Search Apartaments</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+	<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+	<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+	<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+</head>
+<body>
+
+	#=include 'includes/header_new.html'
+
+	<main class="main-wrap" role="main">
+		<a data-fancybox="gallery" data-caption="Image Caption" href="images/search_apartments_back.jpg">
+			<!-- fancybox gallery wrap -->
+			<div class="banner-inner search-apartaments">
+				<!-- style="background-image: url(../images/search_apartments_back.jpg);" -->
+				<!-- 		<img src="images/search_apartments_back.jpg" alt="images"> -->
+				<div class="banner-caption-wrap">
+					<div class="banner-caption">
+						<div class="caption-title">
+							<div class="container">
+								<div class="container-outer">
+									<h1 class="inner-title"><span>Поиск недвижимости в Майами</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+		
+		#=include 'includes/breadcrumbs.html'
+
+		<section class="tabs-search-by-type">
+			<div class="container">
+				<form action="#" class="select-form light">
+				<div class="form-inner">
+					<ul class="choose-header">
+						<li class="active">дома</li>
+						<li>квартиры</li>
+						<li>новостройки</li>
+					</ul>
+					<div class="table-wrap-wrap active">
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="city" id="city">
+											<option value="city1">Майами</option>
+											<option value="city2">Лос Анжелес</option>
+											<option value="city3">Нью Йорк</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select place-select">
+										<select name="place" id="place">
+											<option value="">Выбарть район</option>
+											<option value="place1">Район 1</option>
+											<option value="place2">Район 2</option>
+											<option value="place3">Район 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select address-select">
+										<div class="inp-wr">
+											<input type="search" placeholder="Поиск по зданию, адресу, району, ID-коду">
+											<button type="submit" class="search-icon"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bath" id="bath">
+											<option value="bath1">0+ Ванные</option>
+											<option value="bath2">1+ Ванные</option>
+											<option value="bath3">2+ Ванные</option>
+											<option value="bath4">3+ Ванные</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bed" id="bed">
+											<option value="bed1">0+ Спальни</option>
+											<option value="bed2">1+ Спальни</option>
+											<option value="bed3">2+ Спальни</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="cost" id="cost">
+											<option value="cost1">$300K — $900K</option>
+											<option value="cost2">$1000K — $2000K</option>
+											<option value="cost3">$3000K — $10000K</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="area" id="area">
+											<option value="area1">40 м2 — 2000 м2</option>
+											<option value="area2">3000 м2 — 10000 м2</option>
+											<option value="area3">10000 м2 — 100000 м2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="year" id="year">
+											<option value="year1">1998 г. — 2017 г.</option>
+											<option value="year2">2017 г. — 2100 г.</option>
+											<option value="year3">2100 г. — 3000 г. до н.е.</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table-wrap-wrap">
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="city" id="city">
+											<option value="city1">Майами</option>
+											<option value="city2">Лос Анжелес</option>
+											<option value="city3">Нью Йорк</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select place-select">
+										<select name="place" id="place">
+											<option value="">Выбарть район</option>
+											<option value="place1">Район 1</option>
+											<option value="place2">Район 2</option>
+											<option value="place3">Район 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select address-select">
+										<div class="inp-wr">
+											<input type="search" placeholder="Поиск по зданию, адресу, району, ID-коду">
+											<button type="submit" class="search-icon"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bath" id="bath">
+											<option value="bath1">0+ Ванные</option>
+											<option value="bath2">1+ Ванные</option>
+											<option value="bath3">2+ Ванные</option>
+											<option value="bath4">3+ Ванные</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bed" id="bed">
+											<option value="bed1">0+ Спальни</option>
+											<option value="bed2">1+ Спальни</option>
+											<option value="bed3">2+ Спальни</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="cost" id="cost">
+											<option value="cost1">$300K — $900K</option>
+											<option value="cost2">$1000K — $2000K</option>
+											<option value="cost3">$3000K — $10000K</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="area" id="area">
+											<option value="area1">40 м2 — 2000 м2</option>
+											<option value="area2">3000 м2 — 10000 м2</option>
+											<option value="area3">10000 м2 — 100000 м2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="year" id="year">
+											<option value="year1">1998 г. — 2017 г.</option>
+											<option value="year2">2017 г. — 2100 г.</option>
+											<option value="year3">2100 г. — 3000 г. до н.е.</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table-wrap-wrap">
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="city" id="city">
+											<option value="city1">Майами</option>
+											<option value="city2">Лос Анжелес</option>
+											<option value="city3">Нью Йорк</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select place-select">
+										<select name="place" id="place">
+											<option value="">Выбарть район</option>
+											<option value="place1">Район 1</option>
+											<option value="place2">Район 2</option>
+											<option value="place3">Район 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select address-select">
+										<div class="inp-wr">
+											<input type="search" placeholder="Поиск по зданию, адресу, району, ID-коду">
+											<button type="submit" class="search-icon"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table-wrap">
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bath" id="bath">
+											<option value="bath1">0+ Ванные</option>
+											<option value="bath2">1+ Ванные</option>
+											<option value="bath3">2+ Ванные</option>
+											<option value="bath4">3+ Ванные</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="bed" id="bed">
+											<option value="bed1">0+ Спальни</option>
+											<option value="bed2">1+ Спальни</option>
+											<option value="bed3">2+ Спальни</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="cost" id="cost">
+											<option value="cost1">$300K — $900K</option>
+											<option value="cost2">$1000K — $2000K</option>
+											<option value="cost3">$3000K — $10000K</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="area" id="area">
+											<option value="area1">40 м2 — 2000 м2</option>
+											<option value="area2">3000 м2 — 10000 м2</option>
+											<option value="area3">10000 м2 — 100000 м2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="table-cell">
+								<div class="form-group">
+									<div class="light-select city-select">
+										<select name="year" id="year">
+											<option value="year1">1998 г. — 2017 г.</option>
+											<option value="year2">2017 г. — 2100 г.</option>
+											<option value="year3">2100 г. — 3000 г. до н.е.</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="form-controlls clearfixNew">
+						<div class="left"><span></span>Дополнительные параметры</div>
+						<div class="right"><span></span>Сбросить настройки</div>			
+					</div>
+				</form>	
+			</div>
+		</section>
+
+
+		<!-- <div class="select-section">
+			<div class="container">
+				<div class="container-outer">
+					<div class="inline-wrap">
+						<div class="col-80 col-md-100">
+							<form action="#" class="select-form light">
+								<div class="table-wrap">
+									<div class="table-cell">
+										<div class="form-group">
+											<div class="light-select city-select">
+												<select name="city" id="city">
+													<option value="city1">Майами</option>
+													<option value="city2">Лос Анжелес</option>
+													<option value="city3">Нью Йорк</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="table-cell">
+										<div class="form-group">
+											<div class="light-select place-select">
+												<select name="place" id="place">
+													<option value="place1">Sunny Isles Beach1</option>
+													<option value="place2">Sunny Isles Beach2</option>
+													<option value="place3">Sunny Isles Beach3</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="table-cell">
+										<div class="form-group">
+											<div class="light-select address-select">
+												<select name="address" id="address">
+													<option value="address1">Chateau Beach Residences</option>
+													<option value="address2">Chateau Beach Residences</option>
+													<option value="address3">Chateau Beach Residences</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="table-cell">
+										<div class="form-group">
+											<div class="checkbox-cover">
+												<input type="checkbox" class="checkbox" id="check1">
+												<label for="check1" class="checkbox-label">Вид на жительство</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-20 col-md-100">
+							<div class="all-search">
+								<div class="all-count">Всего найдено: 55</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- section -->
+		<div class="search-items-section"> 
+			<div class="container">
+				<div class="container-outer">
+					<div class="search-items">
+						<div class="inline-wrap">
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item4.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item1.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item4.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item2.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item5.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item3.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item4.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item1.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item4.jpg" alt="item" class="horizontal">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item2.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item5.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+							<div class="col-33 col-sm-50 col-xs-100">
+								<div class="square-card-block square-cover">
+									<div class="card-block">
+										<div class="card-inner">
+											<figure class="item-figure">
+												<img src="images/item/item3.jpg" alt="item" class="vertical">
+												<!-- class horizontal or vertical for a different images -->
+											</figure>
+											<!-- image -->
+											<div class="item-star">
+												<div class="tooltip-wrap">
+													<div class="icon-star"><!-- change active -->
+														<?xml version="1.0" encoding="UTF-8"?>
+														<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															<!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+															<title>6290A4BC-042E-471F-A277-1C02EE02C906</title>
+															<desc>Created with sketchtool.</desc>
+															<defs></defs>
+															<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g class="full-golden" id="go-to-compare-0" transform="translate(-5.000000, -7.000000)" stroke="#F3EFFF">
+																	<polygon id="Star" points="13.2600002 19.6155145 18.3646804 22.6940004 17.0141541 16.8880625 21.5200005 12.9835442 15.5802505 12.473886 13.2600002 7 10.9397824 12.473886 5 12.9835442 9.50584632 16.8880625 8.15532009 22.6940004"></polygon>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<div class="black-tooltip blue left" data-text="Удалить из сравнения" data-changetext="Добавить к сравнению">Добавить к сравнению</div>
+												</div>
+											</div>
+											<!-- star -->
+											<div class="item-caption">
+												<div class="caption-inside">
+													<a href="#"><div class="item-name">Paramount World Center</div></a>
+													<address class="item-address">1010 NE 2nd Avenue</address>
+													<div class="item-price">
+														<span class="from">2,100,000</span>
+														<span class="to">8,600,000</span>
+													</div>
+													<div class="hidden-caption">
+														<ul class="item-details-list">
+															<li>Срок сдачи: 2017-2019</li>
+															<li>Этажей: 19</li>
+															<li>Квартир: 24</li>
+															<li>Размер квартир: 200-750 м2</li>
+														</ul>
+														<div class="item-btn">
+															<div class="left-btn">
+																<div class="inside-btn">
+																	<a href="#" class="empty-golden-btn white-inside">Смотреть подробнее</a>
+																</div>
+															</div>
+															<div class="right-btn">
+																<a href="#" class="round-arrow-btn"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- item-caption -->
+											<div class="golden-mark">
+												<div class="tooltip-wrap">
+													<div class="mark-info">
+														вид на жительство
+														<span class="icon-info">?</span>
+													</div>
+													<div class="black-tooltip blue bottom large">
+														Приобретая апартаменты Вы гарантировано получите вид на жительство в США для себя  и своей семьи по программе EB-5
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- item -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section -->
+
+		#=include 'includes/pagination.html'
+
+	</main>
+
+	#=include 'includes/footer.html'
+
+	<!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="libs/vendor/jquery.placeholder.min.js"></script>
+	<script src="libs/vendor/jquery.nice-select.min.js"></script>
+	<script src="libs/vendor/jquery.fancybox.min.js"></script>
+
+	<!-- main -->
+	<script src="libs/main.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
