@@ -40,7 +40,16 @@ $(".choose-header").on("click", "li", function(){
 
 	$(this).addClass("active");
 	content.eq($(this).index()).addClass("active");
+});
 
+// scroll bar 
+
+$(".text").niceScroll({
+	cursorcolor: '#998100',
+	background: '#e2e2e2',
+	autohidemode: false,
+	cursorwidth: '6px',
+	smoothscroll: true
 });
 
 })(jQuery);

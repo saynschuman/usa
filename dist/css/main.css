@@ -7257,6 +7257,57 @@ h2 .tr {
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg); }
 
+.banner-inner.search-apartaments {
+  height: 576px; }
+
+.caption-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 635px;
+  top: 50%;
+  -webkit-transform: translateY(-53%);
+      -ms-transform: translateY(-53%);
+          transform: translateY(-53%);
+  background-color: rgba(244, 244, 244, 0.94);
+  -webkit-box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.11);
+  padding: 38px 30px;
+  font-style: 14px;
+  line-height: 21px;
+  overflow: hidden;
+  height: -webkit-calc(100% - 200px);
+  height: calc(100% - 200px); }
+  .caption-body .text {
+    width: 100%;
+    max-width: 433px;
+    height: 100%;
+    overflow: scroll; }
+  .caption-body::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    background-color: rgba(240, 240, 250, 0.94);
+    width: 100%; }
+  .caption-body .title {
+    font-size: 23px;
+    color: #2a166d;
+    width: 401.4px;
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-family: RobotoSlabRegular,Arial,serif; }
+    .caption-body .title::after {
+      content: '';
+      left: 0;
+      position: absolute;
+      bottom: -10px;
+      width: 79.4px;
+      border: solid 1px #371f87; }
+
 .new-search-items .fixed-price {
   position: absolute;
   bottom: -10px;
@@ -7463,3 +7514,7 @@ h2 .tr {
       text-align: left; }
   .search-results {
     margin-bottom: 20px; } }
+
+@media screen and (max-width: 670px) {
+  .caption-body {
+    padding: 10px 0; } }
