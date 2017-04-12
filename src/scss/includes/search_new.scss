@@ -252,3 +252,246 @@
 		}
 	}
 }
+
+.new-search-items {
+	.fixed-price {
+		position: absolute;
+		bottom: -10px;
+		color: #fff;
+		padding: 5px 15px 5px 10px;
+		left: 20px;
+		font-style: 17px;
+	}
+	.title-house {
+		right: 20px;
+		bottom: 10px;
+		position: absolute;
+		color: #fff;
+		font-style: italic;
+		font-style: 16px;
+	}
+	.card-block .item-caption .caption-inside {
+		bottom: 50% !important;
+		transform: translate(-50%, 50%) !important;
+		left: 50% !important;
+	}
+	.card-block .item-caption a {
+    	width: 100%;
+	}
+	.item-btn .left-btn {
+	    font-size: 15px;
+	    vertical-align: top;
+	    width: 80%;
+	    margin: auto !important;
+	    display: block !important;
+	    max-width: 100% !important;
+	}	
+	.empty-golden-btn {
+		background: #998100;
+		&:hover {
+			background: transparent;
+		}
+	}
+	.item-caption {
+		&:hover {
+			 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 8, 89, 0.93) 97%);
+		}
+	}
+}
+
+
+.search-results {
+	margin: 0 0 40px;
+	padding: 0 15px;
+	ul {
+		
+		li {
+			display: inline-block;
+			float: left;
+			&.results-text {
+				float: right;
+				span {
+					display: block;
+					margin-bottom: 5px;
+					font-size: 14px;
+					text-align: right;
+					color: #333333;
+					b {
+						color: #190b46;
+						font-weight: 300;
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.nice-select {
+		width: 265px;
+		color: #665600;
+	}
+	.a-filter {
+		display: block;
+		border: 1px solid #665600;
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+		position: relative;
+	}
+	.filter-round {
+		position: absolute;
+		display: block;
+		left: 16px;
+		top: 12px;
+		margin: auto;
+		&::after {
+			content: '';
+			height: 6px;
+			width: 6px;
+			position: absolute;
+			border: 1px solid #998100;
+			border-radius: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	.filter-mark {
+		position: absolute;
+		display: block;
+		left: 50%;
+		top: 40%;
+		height: 20px;
+		width: 20px;
+		transform: translate(-50%, -50%);
+		border-radius: 100%;
+		border: 1px solid #998100;
+		border-bottom: none;
+		&::after {
+			content: '';
+			height: 14px;
+			width: 1px;
+			position: absolute;
+			background: #998100;
+			top: 13px;
+			left: 5px;
+			transform: rotate(-45deg);
+		}
+		&::before {
+			content: '';
+			height: 14px;
+			width: 1px;
+			position: absolute;
+			background: #998100;
+			top: 13px;
+			right: 5px;
+			transform: rotate(45deg);
+		}		
+	}
+	.filter-block {
+		position: relative;
+		span {
+			position: absolute;
+			background: #998100;
+			height: 7px;
+			width: 7px;
+			display: block;
+			&:nth-child(1) {
+				top: 12px;
+				left: 11px;
+			}
+			&:nth-child(2) {
+				top: 12px;
+				right: 11px;
+			}
+			&:nth-child(3) {
+				bottom: -30px;
+				left: 11px;
+			}
+			&:nth-child(4) {
+				bottom: -30px;
+				right: 11px;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 1159px) {
+	.new-search-items .item-btn .empty-golden-btn {
+	    width: 100%;
+	    margin: auto;
+	    font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1130px) {
+	.tabs-search-by-type .form-inner {
+	    padding: 70px 20px 10px;
+	    outline: none;
+	    outline-offset: -44px;
+	}
+	.tabs-search-by-type ul.choose-header li {
+		padding: 25px 15px;
+	}
+	.tabs-search-by-type .form-controlls {
+    	padding: 10px 20px 33px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.tabs-search-by-type .form-controlls .left {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		span {
+			display: none;
+		} 
+	}
+	.tabs-search-by-type .form-controlls .right {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		span {
+			display: none;
+		} 
+	}
+	.card-info .look {
+		width: 32px;
+		height: 32px;
+		background-size: 100%;
+		right: 10px;
+		bottom: 10px;
+	}
+	.card-info {
+		padding: 10px;
+	}
+	.search-results ul li {
+		&:first-child {
+			float: left;
+			padding-left: 50px;
+		}
+	    display: block;
+	    float: none;
+	    margin-bottom: 10px;
+	}
+	.search-results .nice-select {
+		width: 100%;
+	}
+	.search-results ul.list li {
+		float: none;
+		&:first-child {
+			float: none;
+			padding-left: 20px;
+		}
+	}
+	.search-results ul li.results-text {
+		width: 100%;
+		float: left;
+		span {
+			text-align: left;
+		}
+	}
+} 
