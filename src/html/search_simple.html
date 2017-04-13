@@ -58,7 +58,7 @@
 		
 		#=include 'includes/breadcrumbs.html'
 
-		<div class="select-section">
+		<div class="select-section simple-selection">
 			<div class="container">
 				<div class="container-outer">
 					<div class="inline-wrap">
@@ -68,10 +68,11 @@
 									<div class="table-cell">
 										<div class="form-group">
 											<div class="light-select city-select">
-												<select name="city" id="city">
-													<option value="city1">Майами</option>
-													<option value="city2">Лос Анжелес</option>
-													<option value="city3">Нью Йорк</option>
+												<select name="region" id="city">
+													<option value="">Выбрать район</option>
+													<option value="reg1">Район 1</option>
+													<option value="reg2">Район 2</option>
+													<option value="reg3">Район 3</option>
 												</select>
 											</div>
 										</div>
@@ -79,30 +80,22 @@
 									<div class="table-cell">
 										<div class="form-group">
 											<div class="light-select place-select">
-												<select name="place" id="place">
-													<option value="place1">Sunny Isles Beach1</option>
-													<option value="place2">Sunny Isles Beach2</option>
-													<option value="place3">Sunny Isles Beach3</option>
-												</select>
+											<select name="address" id="address">
+													<option value="address1">$300K — $900K</option>
+													<option value="address2">$900K — $1900K</option>
+													<option value="address3">$1900K — $3900K</option>
+												</select>											
 											</div>
 										</div>
 									</div>
 									<div class="table-cell">
 										<div class="form-group">
 											<div class="light-select address-select">
-												<select name="address" id="address">
-													<option value="address1">Chateau Beach Residences</option>
-													<option value="address2">Chateau Beach Residences</option>
-													<option value="address3">Chateau Beach Residences</option>
+												<select name="place" id="place">
+													<option value="place1">Сортировать:  по релевантности</option>
+													<option value="place2">Сортировать:  по цене</option>
+													<option value="place3">Сортировать:  по рейтингу</option>
 												</select>
-											</div>
-										</div>
-									</div>
-									<div class="table-cell">
-										<div class="form-group">
-											<div class="checkbox-cover">
-												<input type="checkbox" class="checkbox" id="check1">
-												<label for="check1" class="checkbox-label">Вид на жительство</label>
 											</div>
 										</div>
 									</div>

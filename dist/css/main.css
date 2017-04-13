@@ -7007,6 +7007,12 @@ h2 .tr {
     display: block;
     float: left; } }
 
+.simple-selection .city-select .current {
+  width: 120px; }
+
+.simple-selection .address-select .current {
+  width: 200px; }
+
 .searech-res-right {
   font-size: 14px;
   text-align: right;
