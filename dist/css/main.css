@@ -7007,6 +7007,15 @@ h2 .tr {
     display: block;
     float: left; } }
 
+.searech-res-right {
+  font-size: 14px;
+  text-align: right;
+  color: #333333;
+  padding-bottom: 5px; }
+  .searech-res-right b {
+    font-weight: 300;
+    color: #190b46; }
+
 .tabs-search-by-type input[type="search"] {
   width: 100%;
   color: #665600;
