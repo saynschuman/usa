@@ -290,19 +290,29 @@
 	line-height: 21px;
 	overflow: hidden;
 	height: calc(100% - 200px);
+	z-index: 1;
 	.text {
 		width: 100%;
 		max-width: 433px;
-		height: 100%;
+		height: 290px;
 		overflow: scroll;
+		p {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	.nicescroll-rails {
+		margin-left: 30px;
+		margin-top: 3px;
 	}
 	&::after {
 		content: '';
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		height: 30px;
-		background-color: rgba(240, 240, 250, 0.94);
+		height: 25px;
+		background: linear-gradient(to top, rgba(244, 244, 244, 0.94), rgba(244, 244, 244, 0.2));
 		width: 100%;
 	}
 	.title {
@@ -322,6 +332,12 @@
 		border: solid 1px #371f87;
 	  }
 	}
+}
+
+.banner-caption-wrap .caption-title {
+	z-index: 9;
+    position: relative;
+    padding-top: 40px;
 }
 
 .new-search-items {

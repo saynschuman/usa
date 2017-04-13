@@ -50,17 +50,22 @@
 	height: 412px;
 }
 
-// .owl-carousel .owl-stage-outer {
-// 	&::after {
-// 		content: '';
-// 		position: absolute;
-// 		right: 0;
-// 		top: 0;
-// 		width: 120px;
-// 		height: 100%;
-// 		background: linear-gradient(to left, rgba(0,0,0,.7), transparent);
-// 	}
-// }
+.owl-carousel .owl-stage-outer.no-dark {
+	&::after {
+		display: none !important;
+	}
+}
+.owl-carousel .owl-stage-outer {
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 200px;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,.7), transparent);
+	}
+}
 
 
 .card-new-list .col:nth-child(3), .list-dot .col:nth-child(3) {
@@ -157,6 +162,7 @@ h2 .tr {
 		position: absolute;
 		bottom: -10px;
 		left: 15px;
+		font-family: RobotoSlabRegular,Arial,serif;
 		.from {
 			&::after {
 				display: none;
@@ -181,6 +187,7 @@ h2 .tr {
 		font-weight: bold;
 		text-align: left;
 		color: #333333;
+		font-family: RobotoSlabRegular,Arial,serif;
   	}
   	.adr {
 		font-size: 13px;
@@ -189,6 +196,7 @@ h2 .tr {
 		padding: 6px 0;
 		padding-left: 15px;
 		position: relative;
+		padding-bottom: 25px;
 		&::after {
 		    content: '';
 		    width: 12px;
@@ -227,7 +235,7 @@ h2 .tr {
   		display: block;
   		position: absolute;
   		right: 20px;
-  		bottom: 20px; 
+  		bottom: 10px; 
   		background-position: 0 0; 
   		transition: 0s;
   		&:hover {
@@ -237,8 +245,63 @@ h2 .tr {
   	}
 }
 
-.slide-inner {
+.gray-rounded-section  {
+	.round-icon-outer {
+		border: solid 1px #333333;
+		svg {
+			padding-bottom: 6px;
+		}
+	}
+	.price-cover {
+		padding: 24px 0 0;
+	}
+}
 
+.new-search-items {
+	.square-card-block .item-figure {
+	    height: 258px;
+	}
+}
+
+	.card-new-list {
+		border-right: solid 1px #efeee8;
+		margin: 0;
+		padding: 0 35px 80px 0;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 150px;
+			background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+		}
+	}
+
+.card-new-main-sec {
+	.action-list li {
+	    &:first-child {
+	    	margin-top: -2px;
+	    }
+	}
+}
+
+.fancybox-button--left, .fancybox-button--right {
+    border-radius: 0;
+    z-index: 99999;
+    top: 50%;
+    position: fixed;
+}
+
+.fancybox-button--right {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.fancybox-button--left {
+    left: 0;
+    transform: translateY(-50%);
 }
 
 @media screen and (max-width: 1250px) {

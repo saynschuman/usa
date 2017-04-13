@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-apartments-Copy-10" transform="translate(-1078.000000, -981.000000)" fill="#998100">
+            <g id="Group-8-Copy-5" transform="translate(135.000000, 844.000000)">
+                <g id="Group-6" transform="translate(193.000000, 124.000000)">
+                    <path d="M762.5,24 L761.7,24 L761.4,23.7 C762.4,22.6 763,21.1 763,19.5 C763,15.9 760.1,13 756.5,13 C752.9,13 750,15.9 750,19.5 C750,23.1 752.9,26 756.5,26 C758.1,26 759.6,25.4 760.7,24.4 L761,24.7 L761,25.5 L766,30.5 L767.5,29 L762.5,24 L762.5,24 Z M756.5,24 C754,24 752,22 752,19.5 C752,17 754,15 756.5,15 C759,15 761,17 761,19.5 C761,22 759,24 756.5,24 L756.5,24 Z" id="icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

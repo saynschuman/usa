@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>sp-ac</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="42" height="42"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="12" y="13" width="6.96667947" height="6.5697446"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.96667947" height="6.5697446" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="12" y="22" width="6.96667947" height="6.5697446"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.96667947" height="6.5697446" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="23" y="13" width="6.96667947" height="6.5697446"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.96667947" height="6.5697446" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="23" y="22" width="6.96667947" height="6.5697446"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.96667947" height="6.5697446" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-apartments-Новострой" transform="translate(-187.000000, -1262.000000)" stroke="#998100" stroke-width="2">
+            <g id="sp-ac" transform="translate(187.000000, 1262.000000)">
+                <use id="BG-button-Copy-10" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                <use id="BG-button-Copy-10" mask="url(#mask-4)" fill="#998100" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use id="BG-button-Copy-19" mask="url(#mask-6)" fill="#998100" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <use id="BG-button-Copy-18" mask="url(#mask-8)" fill="#998100" fill-rule="evenodd" xlink:href="#path-7"></use>
+                <use id="BG-button-Copy-20" mask="url(#mask-10)" fill="#998100" fill-rule="evenodd" xlink:href="#path-9"></use>
+            </g>
+        </g>
+    </g>
+</svg>

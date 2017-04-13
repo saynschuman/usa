@@ -6824,6 +6824,20 @@ a.golden-btn {
 .top-slider_2 .row_fl .slide-inner {
   height: 412px; }
 
+.owl-carousel .owl-stage-outer.no-dark::after {
+  display: none !important; }
+
+.owl-carousel .owl-stage-outer::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.7)), to(transparent));
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent); }
+
 .card-new-list .col:nth-child(3), .list-dot .col:nth-child(3) {
   width: 33%;
   font-family: Roboto;
@@ -6901,7 +6915,8 @@ h2 .tr {
 .interest-sli .item-price {
   position: absolute;
   bottom: -10px;
-  left: 15px; }
+  left: 15px;
+  font-family: RobotoSlabRegular,Arial,serif; }
   .interest-sli .item-price .from::after {
     display: none; }
 
@@ -6920,14 +6935,16 @@ h2 .tr {
     font-size: 17px;
     font-weight: bold;
     text-align: left;
-    color: #333333; }
+    color: #333333;
+    font-family: RobotoSlabRegular,Arial,serif; }
   .card-info .adr {
     font-size: 13px;
     text-align: left;
     color: #333333;
     padding: 6px 0;
     padding-left: 15px;
-    position: relative; }
+    position: relative;
+    padding-bottom: 25px; }
     .card-info .adr::after {
       content: '';
       width: 12px;
@@ -6961,7 +6978,7 @@ h2 .tr {
     display: block;
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 10px;
     background-position: 0 0;
     -webkit-transition: 0s;
     transition: 0s; }
@@ -6969,6 +6986,55 @@ h2 .tr {
       background-position: 0 42px;
       -webkit-transition: 0s;
       transition: 0s; }
+
+.gray-rounded-section .round-icon-outer {
+  border: solid 1px #333333; }
+  .gray-rounded-section .round-icon-outer svg {
+    padding-bottom: 6px; }
+
+.gray-rounded-section .price-cover {
+  padding: 24px 0 0; }
+
+.new-search-items .square-card-block .item-figure {
+  height: 258px; }
+
+.card-new-list {
+  border-right: solid 1px #efeee8;
+  margin: 0;
+  padding: 0 35px 80px 0;
+  position: relative; }
+  .card-new-list::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #fff);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff); }
+
+.card-new-main-sec .action-list li:first-child {
+  margin-top: -2px; }
+
+.fancybox-button--left, .fancybox-button--right {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  z-index: 99999;
+  top: 50%;
+  position: fixed; }
+
+.fancybox-button--right {
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.fancybox-button--left {
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 @media screen and (max-width: 1250px) {
   .pr-no-border li::after {
@@ -7293,19 +7359,27 @@ h2 .tr {
   line-height: 21px;
   overflow: hidden;
   height: -webkit-calc(100% - 200px);
-  height: calc(100% - 200px); }
+  height: calc(100% - 200px);
+  z-index: 1; }
   .caption-body .text {
     width: 100%;
     max-width: 433px;
-    height: 100%;
+    height: 290px;
     overflow: scroll; }
+    .caption-body .text p:first-child {
+      margin-top: 0; }
+  .caption-body .nicescroll-rails {
+    margin-left: 30px;
+    margin-top: 3px; }
   .caption-body::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 30px;
-    background-color: rgba(240, 240, 250, 0.94);
+    height: 25px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(244, 244, 244, 0.94)), to(rgba(244, 244, 244, 0.2)));
+    background: -webkit-linear-gradient(bottom, rgba(244, 244, 244, 0.94), rgba(244, 244, 244, 0.2));
+    background: linear-gradient(to top, rgba(244, 244, 244, 0.94), rgba(244, 244, 244, 0.2));
     width: 100%; }
   .caption-body .title {
     font-size: 23px;
@@ -7322,6 +7396,11 @@ h2 .tr {
       bottom: -10px;
       width: 79.4px;
       border: solid 1px #371f87; }
+
+.banner-caption-wrap .caption-title {
+  z-index: 9;
+  position: relative;
+  padding-top: 40px; }
 
 .new-search-items .fixed-price {
   position: absolute;

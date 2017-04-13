@@ -42,15 +42,23 @@ $(".choose-header").on("click", "li", function(){
 	content.eq($(this).index()).addClass("active");
 });
 
-// scroll bar 
+$('.owl-next').click(function(){
+	if($(this).hasClass('disabled')) {
+		$('.owl-stage-outer').addClass('no-dark');
+	}
+	else {
+		$('.owl-stage-outer').removeClass('no-dark');
+	}
+})
 
-$(".text").niceScroll({
-	cursorcolor: '#998100',
-	background: '#e2e2e2',
-	autohidemode: false,
-	cursorwidth: '6px',
-	smoothscroll: true
-});
+$('.owl-prev').click(function(){
+	if($('.owl-next').hasClass('disabled')) {
+		$('.owl-stage-outer').addClass('no-dark');
+	}
+	else {
+		$('.owl-stage-outer').removeClass('no-dark');
+	}
+})
 
 })(jQuery);
 
