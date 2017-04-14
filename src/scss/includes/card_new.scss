@@ -55,7 +55,7 @@
 		display: none !important;
 	}
 }
-.owl-carousel .owl-stage-outer {
+.card-new-slider-sec .owl-stage-outer {
 	&::after {
 		content: '';
 		position: absolute;
@@ -66,7 +66,6 @@
 		background: linear-gradient(to left, rgba(0,0,0,.7), transparent);
 	}
 }
-
 
 .card-new-list .col:nth-child(3), .list-dot .col:nth-child(3) {
    	width: 33%;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .icon-viber.white:before, .icon-viber:before {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -6780,6 +6781,118 @@ a.golden-btn {
   clear: both;
   visibility: hidden; }
 
+.ms-options-wrap,
+.ms-options-wrap * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.ms-options-wrap > button:focus,
+.ms-options-wrap > button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  padding: 5px 20px 5px 5px;
+  margin-top: 1px;
+  font-size: 13px;
+  color: #aaa;
+  outline: none;
+  white-space: nowrap; }
+
+.ms-options-wrap > button[disabled] {
+  background-color: #e5e9ed;
+  color: #808080;
+  opacity: 0.6; }
+
+.ms-options-wrap > button:after {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #999;
+  margin-top: -3px; }
+
+.ms-options-wrap > .ms-options {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  background: white;
+  z-index: 2000;
+  border: 1px solid #aaa; }
+
+.ms-options-wrap > .ms-options > .ms-search input {
+  width: 100%;
+  padding: 4px 5px;
+  border: none;
+  border-bottom: 1px groove;
+  outline: none; }
+
+.ms-options-wrap > .ms-options .ms-selectall {
+  display: inline-block;
+  font-size: .9em;
+  text-transform: lowercase;
+  text-decoration: none; }
+
+.ms-options-wrap > .ms-options .ms-selectall:hover {
+  text-decoration: underline; }
+
+.ms-options-wrap > .ms-options > .ms-selectall.global {
+  margin: 4px 5px; }
+
+.ms-options-wrap > .ms-options > ul,
+.ms-options-wrap > .ms-options > ul > li.optgroup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.ms-options-wrap > .ms-options > ul > li.optgroup {
+  padding: 5px; }
+
+.ms-options-wrap > .ms-options > ul > li.optgroup + li.optgroup {
+  border-top: 1px solid #aaa; }
+
+.ms-options-wrap > .ms-options > ul > li.optgroup .label {
+  display: block;
+  padding: 5px 0 0 0;
+  font-weight: bold; }
+
+.ms-options-wrap > .ms-options > ul label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  margin: 1px 0;
+  border: 1px dotted transparent; }
+
+.ms-options-wrap > .ms-options > ul label.focused,
+.ms-options-wrap > .ms-options > ul label:hover {
+  background-color: #efefef;
+  border-color: #999; }
+
+.ms-options-wrap > .ms-options > ul li.selected label {
+  background-color: #efefef;
+  border-color: transparent; }
+
+.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+  margin: 0 5px 0 0;
+  position: absolute;
+  left: 4px;
+  top: 7px; }
+
+.ms-options-wrap > .ms-options.hide-checkbox > ul input[type="checkbox"] {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
 .top-slider_2 .owl-dots {
   font-size: 0;
   margin: 0;
@@ -6827,7 +6940,7 @@ a.golden-btn {
 .owl-carousel .owl-stage-outer.no-dark::after {
   display: none !important; }
 
-.owl-carousel .owl-stage-outer::after {
+.card-new-slider-sec .owl-stage-outer::after {
   content: '';
   position: absolute;
   right: 0;
@@ -7222,6 +7335,10 @@ h2 .tr {
     cursor: pointer;
     -webkit-transition: .3s;
     transition: .3s; }
+    .tabs-search-by-type .form-controlls .left.cl-addition::after {
+      content: 'Скрыть дополнительные параметры'; }
+    .tabs-search-by-type .form-controlls .left::after {
+      content: 'Дополнительные параметры'; }
     .tabs-search-by-type .form-controlls .left:hover {
       -webkit-transition: .3s;
       transition: .3s; }
@@ -7548,6 +7665,232 @@ h2 .tr {
         bottom: -30px;
         right: 11px; }
 
+.place-select .nice-select.jqmsLoaded {
+  display: none !important; }
+
+.place-select .ms-options-wrap > button:focus, .place-select .ms-options-wrap > button {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 1px solid #665600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  height: 42px;
+  line-height: 32px;
+  outline: 0;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 32px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  color: #665600;
+  border-color: #998100; }
+
+.ms-options-wrap > button:after {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: none;
+  padding: 0;
+  margin-top: 0;
+  font-size: 13px;
+  color: transparent;
+  outline: none;
+  white-space: nowrap; }
+
+.ms-options-wrap > button:after {
+  border-bottom: 1px solid #998100;
+  border-right: 1px solid #998100;
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+      -ms-transform-origin: 66% 66%;
+          transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out; }
+
+.ms-options-wrap > .ms-options li.selected label::after {
+  background-image: url(../images/icons/icon-thick-check.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.ms-options-wrap > .ms-options li input {
+  display: none; }
+
+.ms-options-wrap > .ms-options li label {
+  font-size: 13px;
+  color: #333333;
+  padding-left: 38px;
+  padding-top: 11px; }
+  .ms-options-wrap > .ms-options li label::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    height: 14px;
+    width: 14px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #fff;
+    border: solid 1px #ddd; }
+  .ms-options-wrap > .ms-options li label:hover {
+    border-color: transparent;
+    background: transparent; }
+
+.no-aft::after {
+  display: none; }
+
+.checkboxes-addition {
+  width: 100%;
+  max-width: 785px;
+  display: block;
+  margin: 0 auto;
+  border: 1px dashed #979797;
+  margin-top: 20px;
+  padding: 22px 30px;
+  position: relative;
+  display: none; }
+  .checkboxes-addition ul {
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .checkboxes-addition ul:last-child {
+      float: right;
+      width: auto; }
+    .checkboxes-addition ul:nth-child(2) {
+      float: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      width: 190px; }
+    .checkboxes-addition ul li {
+      font-size: 13px;
+      line-height: 2.08;
+      color: #665600;
+      padding-left: 25px;
+      position: relative; }
+      .checkboxes-addition ul li label::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 6px;
+        height: 14px;
+        width: 14px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        background-color: #fff;
+        border: solid 1px #ddd; }
+      .checkboxes-addition ul li input {
+        display: none; }
+        .checkboxes-addition ul li input:checked + label::before {
+          background-image: url(../images/icons/icon-thick-check.png);
+          background-size: 70%;
+          background-repeat: no-repeat;
+          background-position: center center; }
+
+.tags-inner input {
+  display: none; }
+
+.tags-inner span {
+  position: relative;
+  margin-top: 35px;
+  display: inline-block;
+  padding-right: 35px;
+  padding-top: 3px;
+  cursor: pointer; }
+  .tags-inner span:hover {
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .tags-inner span:hover b {
+      background: #998100;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .tags-inner span:hover b::after {
+        background: #fff;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      .tags-inner span:hover b::before {
+        background: #fff; }
+
+.tags-inner b {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+  display: inline-block;
+  margin-right: 20px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  float: left;
+  right: -17px;
+  top: 0;
+  border: 1px solid #998100;
+  cursor: pointer; }
+  .tags-inner b::after {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #998100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    right: 0;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .tags-inner b::before {
+    content: '';
+    width: 10px;
+    height: 1px;
+    background: #998100;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    right: 0;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.ms-options-wrap > .ms-options {
+  height: 125px;
+  overflow: scroll;
+  border: none;
+  -webkit-box-shadow: 0 10px 12px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 12px 2px rgba(0, 0, 0, 0.12); }
+
+.ms-options-wrap > .ms-options > ul li.selected label {
+  background-color: transparent; }
+
 @media screen and (max-width: 1159px) {
   .new-search-items .item-btn .empty-golden-btn {
     width: 100%;
@@ -7563,6 +7906,24 @@ h2 .tr {
     padding: 25px 15px; }
   .tabs-search-by-type .form-controlls {
     padding: 10px 20px 33px; } }
+
+@media screen and (max-width: 991px) {
+  .checkboxes-addition {
+    max-width: 200px; }
+  .checkboxes-addition ul {
+    float: none;
+    width: 100%; }
+  .checkboxes-addition ul:nth-child(2) {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: auto;
+    display: block;
+    width: 100%; }
+  .checkboxes-addition ul:last-child {
+    float: none;
+    width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .tabs-search-by-type .form-controlls .left {

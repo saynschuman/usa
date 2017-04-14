@@ -423,11 +423,16 @@
 							<div class="table-cell">
 								<div class="form-group">
 									<div class="light-select place-select">
-										<select name="place" id="place">
-											<option value="">Выбарть район</option>
-											<option value="place1">Район 1</option>
-											<option value="place2">Район 2</option>
-											<option value="place3">Район 3</option>
+										<select multiple name="place" class="place-sel">
+											<option value="place1">Aventura</option>
+											<option value="place2">Bal Harbour</option>
+											<option value="place3">Bay Harbor Islands</option>
+											<option value="place4">Biscayne Gardens</option>
+											<option value="place5">Biscayne Park</option>
+											<option value="place6">Coconut Grove</option>
+											<option value="place7">Downtown Miami</option>
+											<option value="place8">Doral</option>
+											<option value="place9">Hialeah</option>
 										</select>
 									</div>
 								</div>
@@ -518,11 +523,16 @@
 							<div class="table-cell">
 								<div class="form-group">
 									<div class="light-select place-select">
-										<select name="place" id="place">
-											<option value="">Выбарть район</option>
-											<option value="place1">Район 1</option>
-											<option value="place2">Район 2</option>
-											<option value="place3">Район 3</option>
+										<select name="place" class="place-sel">
+											<option value="place1">Aventura</option>
+											<option value="place2">Bal Harbour</option>
+											<option value="place3">Bay Harbor Islands</option>
+											<option value="place4">Biscayne Gardens</option>
+											<option value="place5">Biscayne Park</option>
+											<option value="place6">Coconut Grove</option>
+											<option value="place7">Downtown Miami</option>
+											<option value="place8">Doral</option>
+											<option value="place9">Hialeah</option>
 										</select>
 									</div>
 								</div>
@@ -613,11 +623,16 @@
 							<div class="table-cell">
 								<div class="form-group">
 									<div class="light-select place-select">
-										<select name="place" id="place">
-											<option value="">Выбарть район</option>
-											<option value="place1">Район 1</option>
-											<option value="place2">Район 2</option>
-											<option value="place3">Район 3</option>
+										<select name="place" class="place-sel">
+											<option value="place1">Aventura</option>
+											<option value="place2">Bal Harbour</option>
+											<option value="place3">Bay Harbor Islands</option>
+											<option value="place4">Biscayne Gardens</option>
+											<option value="place5">Biscayne Park</option>
+											<option value="place6">Coconut Grove</option>
+											<option value="place7">Downtown Miami</option>
+											<option value="place8">Doral</option>
+											<option value="place9">Hialeah</option>
 										</select>
 									</div>
 								</div>
@@ -691,10 +706,35 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="tags-inner">
+						<span><b></b>Bal Harbour</span>
+						<span><b></b>Biscayne Gardens</span>
+						<span><b></b>Biscayne Park</span>
+					</div>
+					<div class="checkboxes-addition clearfixNew">
+						<ul>
+							<li><input type="checkbox" id="w"><label for="w">Вид на воду</label></li>
+							<li><input type="checkbox" id="b"><label for="b">Бассейн</label></li>
+							<li><input type="checkbox" id="t"><label for="t">Теннисные корты</label></li>
+							<li><input type="checkbox" id="p"><label for="p">Баскетбольная площадка</label></li>
+						</ul>
+						<ul>
+							<li><input type="checkbox" id="w1"><label for="w1">Вид на воду</label></li>
+							<li><input type="checkbox" id="b1"><label for="b1">Бассейн</label></li>
+							<li><input type="checkbox" id="t1"><label for="t1">Теннисные корты</label></li>
+							<li><input type="checkbox" id="p1"><label for="p1">Баскетбольная площадка</label></li>
+						</ul>
+						<ul>
+							<li><input type="checkbox" id="w2"><label for="w2">Вид на воду</label></li>
+							<li><input type="checkbox" id="b2"><label for="b2">Бассейн</label></li>
+							<li><input type="checkbox" id="t2"><label for="t2">Теннисные корты</label></li>
+							<li><input type="checkbox" id="p2"><label for="p2">Баскетбольная площадка</label></li>
+						</ul>
 					</div>
 					</div>
 					<div class="form-controlls clearfixNew">
-						<div class="left"><span></span>Дополнительные параметры</div>
+						<div class="left"><span></span></div>
 						<div class="right"><span></span>Сбросить настройки</div>			
 					</div>
 				</form>	
@@ -1599,6 +1639,7 @@
 	<script src="libs/vendor/jquery.placeholder.min.js"></script>
 	<script src="libs/vendor/jquery.nice-select.min.js"></script>
 	<script src="libs/vendor/jquery.fancybox.min.js"></script>
+	<script src="libs/vendor/multiselect.js"></script>
 
 	<!-- main -->
 	<script src="libs/main.min.js"></script>
@@ -1611,6 +1652,13 @@
 			background: '#e2e2e2',
 			autohidemode: false,
 			cursorwidth: '6px',
+			smoothscroll: true
+		});
+		$(".ms-options-wrap > .ms-options").niceScroll({
+			cursorcolor: '#998100',
+			background: '#e2e2e2',
+			autohidemode: false,
+			cursorwidth: '5px',
 			smoothscroll: true
 		});
 	</script>

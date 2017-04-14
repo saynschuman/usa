@@ -151,6 +151,14 @@
 			text-decoration: underline;
 			cursor: pointer;
 			transition: .3s;
+			&.cl-addition {
+				&::after {
+					content: 'Скрыть дополнительные параметры';
+				}	
+			}
+			&::after {
+				content: 'Дополнительные параметры';
+			}
 			&:hover {
 				transition: .3s;
 				span {
@@ -504,10 +512,274 @@
 	}
 }
 
+.place-select {
+	.nice-select.jqmsLoaded {
+		display: none !important;
+	}
+	.ms-options-wrap > button:focus, .ms-options-wrap > button {
+	    background-color: transparent;
+	    border-radius: 0;
+	    border: 1px solid #665600;
+	    box-sizing: border-box;
+	    clear: both;
+	    cursor: pointer;
+	    display: block;
+	    font-family: inherit;
+	    font-size: 13px;
+	    font-weight: 400;
+	    height: 42px;
+	    line-height: 32px;
+	    outline: 0;
+	    color: #fff;
+	    padding-left: 20px;
+	    padding-right: 32px;
+	    position: relative;
+	    text-align: left !important;
+	    transition: all .2s ease-in-out;
+	    user-select: none;
+	    white-space: nowrap;
+	    color: #665600;
+    	border-color: #998100;
+    }
+}
 
-// nice scroll
+.ms-options-wrap > button:after {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: none;
+    padding: 0;
+    margin-top: 0;
+    font-size: 13px;
+    color: transparent;
+    outline: none;
+    white-space: nowrap;
+}
+
+.ms-options-wrap > button:after {
+	border-bottom: 1px solid #998100;
+    border-right: 1px solid #998100;
+    display: block;
+    height: 6px;
+    width: 6px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all .15s ease-in-out;
+}
+
+.ms-options-wrap > .ms-options li {
+	&.selected {
+		label {
+			&::after {
+				background-image: url(../images/icons/icon-thick-check.png);
+				background-size: 70%;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}			
+		}
+	}
+	input {
+		display: none;
+	}
+	label {
+		font-size: 13px;
+		color: #333333;		
+		padding-left: 38px;
+		padding-top: 11px;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 12px;
+			top: 10px;
+			height: 14px;
+			width: 14px;
+			border-radius: 2px;
+			background-color: #fff;
+			border: solid 1px #ddd;
+		}
+		&:hover {
+			border-color: transparent;
+			background: transparent;
+		}
+	}
+}
+
+.no-aft {
+	&::after {
+		display: none;
+	}
+}
+
+.checkboxes-addition {
+	width: 100%;
+	max-width: 785px;
+	display: block;
+	margin: 0 auto;
+	border: 1px dashed #979797;
+	margin-top: 20px;
+	padding: 22px 30px;
+	position: relative;
+	display: none;
+	ul {
+		margin: 0;
+		padding: 0;
+		float: left;
+		&:last-child {
+			float: right;
+			width: auto;
+		}
+		&:nth-child(2) {
+			float: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			display: block;
+			width: 190px;
+		}
+		li {
+			font-size: 13px;
+			line-height: 2.08;
+			color: #665600;
+			padding-left: 25px;
+			position: relative;
+			label {
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0px;
+					top: 6px;
+					height: 14px;
+					width: 14px;
+					border-radius: 2px;
+					background-color: #fff;
+					border: solid 1px #ddd;				
+				}
+			}
+			input {
+				display: none;
+				&:checked + label {
+					&::before {
+						background-image: url(../images/icons/icon-thick-check.png);
+						background-size: 70%;
+						background-repeat: no-repeat;
+						background-position: center center;						
+					}
+				}
+			}
+		}
+	}
+}
+
+.tags-inner {
+	input {
+		display: none;
+	}
+	span {
+		position: relative;
+		margin-top: 35px;
+		display: inline-block;
+		padding-right: 35px;
+		padding-top: 3px;
+		cursor: pointer;
+		// &:nth-child(odd) {
+		// 	display: none;
+		// }
+		&:hover {
+			transition: .3s;
+			b {
+				background: #998100;
+				transition: .3s;
+				&::after {
+					background: #fff;
+					transition: .3s;
+				}
+				&::before {
+					background: #fff;
+				}
+			}
+		}		
+	}
+	b {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		background: #fff;
+		display: inline-block;
+		margin-right: 20px;
+		border-radius: 100%;
+		float: left;
+		right: -17px;
+		top: 0;
+		border: 1px solid #998100; 
+		cursor: pointer;
+		&::after {
+			content: '';
+			width: 1px;
+			height: 10px;
+			background: #998100;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 1px;
+			right: 0;
+			margin: auto;
+			transform: rotate(45deg);
+		}
+		&::before {
+			content: '';
+			width: 10px;
+			height: 1px;
+			background: #998100;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 1px;
+			right: 0;
+			margin: auto;
+			transform: rotate(45deg);
+		}			
+	}
+}
+
+.ms-options-wrap > .ms-options {
+	// position: absolute;
+	// &::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	height: 30px;
+	// 	background-image: linear-gradient(to top, #fff, transparent);
+	// 	width: 100%;
+	// }
+}
+
+.ms-options-wrap > .ms-options {
+	height: 125px;
+	overflow: scroll;	
+	border: none;
+	box-shadow: 0 10px 12px 2px rgba(0, 0, 0, 0.12);
+}
 
 
+.ms-options-wrap > .ms-options > ul li.selected label {
+    background-color: transparent;
+}
+
+.place-select {
+	.list {
+		li {
+
+		}
+	}
+}
 
 
 @media screen and (max-width: 1159px) {
@@ -530,6 +802,29 @@
 	.tabs-search-by-type .form-controlls {
     	padding: 10px 20px 33px;
 	}
+}
+
+@media screen and (max-width: 991px) {
+.checkboxes-addition {
+	max-width: 200px;
+}
+.checkboxes-addition ul {
+	float: none;
+	width: 100%;
+}
+.checkboxes-addition ul:nth-child(2) {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+.checkboxes-addition ul:last-child {
+	float: none;
+	width: 100%;
+}
 }
 
 @media screen and (max-width: 768px) {
